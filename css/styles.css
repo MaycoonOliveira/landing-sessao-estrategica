@@ -1,17 +1,17 @@
 :root {
   /* superfícies */
-  --bg:          #050711;
-  --bg-2:        #070b16;
-  --surface:     #0b1120;
-  --surface-2:   #0f1830;
-  --surface-3:   #14213a;
-  --border:      rgba(140, 170, 220, 0.12);
-  --border-2:    rgba(140, 170, 220, 0.22);
+  --bg:          #eef2f8;
+  --bg-2:        #e4eaf3;
+  --surface:     #ffffff;
+  --surface-2:   #f3f7fc;
+  --surface-3:   #e9f0f8;
+  --border:      rgba(15, 35, 75, 0.10);
+  --border-2:    rgba(15, 35, 75, 0.18);
 
   /* texto */
-  --text:        #eaf1fc;
-  --text-muted:  #9aabc6;
-  --text-dim:    #6d7f9c;
+  --text:        #0e1b30;
+  --text-muted:  #45566e;
+  --text-dim:    #76869c;
 
   /* marca */
   --blue:        #2f7dff;
@@ -41,46 +41,46 @@
   --gutter:      clamp(1.1rem, 4vw, 2rem);
   --section-pad: clamp(4rem, 9vw, 7rem);
 
-  /* tokens que mudam entre tema escuro (padrão) e claro */
-  --heading:     #ffffff;
-  --accent-2:    #33d6ff;
-  --header-bg:   rgba(5, 7, 17, 0.72);
-  --card-1:      #0f1830;
-  --card-2:      #0b1120;
-  --chip-bg:     rgba(15, 24, 48, 0.9);
-  --grid-line:   rgba(140, 170, 220, 0.05);
-  --glow-1:      rgba(47, 125, 255, 0.28);
-  --glow-2:      rgba(51, 214, 255, 0.14);
-  --glow-3:      rgba(47, 125, 255, 0.10);
-  --overlay:     rgba(3, 5, 12, 0.62);
+  /* tokens que mudam entre tema claro (padrão) e escuro */
+  --heading:     #0b1424;
+  --accent-2:    #0e86c7;
+  --header-bg:   rgba(255, 255, 255, 0.80);
+  --card-1:      #ffffff;
+  --card-2:      #f3f7fc;
+  --chip-bg:     rgba(255, 255, 255, 0.92);
+  --grid-line:   rgba(20, 50, 100, 0.06);
+  --glow-1:      rgba(47, 125, 255, 0.16);
+  --glow-2:      rgba(51, 214, 255, 0.10);
+  --glow-3:      rgba(47, 125, 255, 0.06);
+  --overlay:     rgba(20, 30, 55, 0.42);
 
   --font-head:   "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-body:   "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-/* ============ TEMA CLARO (toggle no header) ============ */
+/* ============ TEMA ESCURO (toggle no header) ============ */
 body:has(#theme-toggle:checked) {
-  --bg:         #eef2f8;
-  --bg-2:       #e4eaf3;
-  --surface:    #ffffff;
-  --surface-2:  #f3f7fc;
-  --surface-3:  #e9f0f8;
-  --border:     rgba(15, 35, 75, 0.10);
-  --border-2:   rgba(15, 35, 75, 0.18);
-  --text:       #0e1b30;
-  --text-muted: #45566e;
-  --text-dim:   #76869c;
-  --heading:    #0b1424;
-  --accent-2:   #0e86c7;
-  --header-bg:  rgba(255, 255, 255, 0.80);
-  --card-1:     #ffffff;
-  --card-2:     #f3f7fc;
-  --chip-bg:    rgba(255, 255, 255, 0.92);
-  --grid-line:  rgba(20, 50, 100, 0.06);
-  --glow-1:     rgba(47, 125, 255, 0.16);
-  --glow-2:     rgba(51, 214, 255, 0.10);
-  --glow-3:     rgba(47, 125, 255, 0.06);
-  --overlay:    rgba(20, 30, 55, 0.42);
+  --bg:         #050711;
+  --bg-2:       #070b16;
+  --surface:    #0b1120;
+  --surface-2:  #0f1830;
+  --surface-3:  #14213a;
+  --border:     rgba(140, 170, 220, 0.12);
+  --border-2:   rgba(140, 170, 220, 0.22);
+  --text:       #eaf1fc;
+  --text-muted: #9aabc6;
+  --text-dim:   #6d7f9c;
+  --heading:    #ffffff;
+  --accent-2:   #33d6ff;
+  --header-bg:  rgba(5, 7, 17, 0.72);
+  --card-1:     #0f1830;
+  --card-2:     #0b1120;
+  --chip-bg:    rgba(15, 24, 48, 0.9);
+  --grid-line:  rgba(140, 170, 220, 0.05);
+  --glow-1:     rgba(47, 125, 255, 0.28);
+  --glow-2:     rgba(51, 214, 255, 0.14);
+  --glow-3:     rgba(47, 125, 255, 0.10);
+  --overlay:    rgba(3, 5, 12, 0.62);
 }
 
 /* ============ 2. RESET & BASE ============ */
