@@ -14,6 +14,9 @@ _Ex.: https://escala-previsivel.netlify.app_
 ## ✨ Destaques
 
 - **100% HTML + CSS puro** — zero JavaScript, zero dependências de build.
+- **Tema claro/escuro** com toggle no header (técnica de checkbox + seletor `:has()`).
+- **Menu lateral (drawer) no mobile** e **modal de confirmação** ao aplicar — ambos
+  feitos só com CSS (seletor `:target`), sem nenhum JavaScript.
 - **Responsivo de verdade** — layout fluido (mobile-first) com `clamp()` e breakpoints
   em 600px, 860px e 1040px.
 - **Design premium** fiel à linguagem visual de referência: tema dark, glows azuis,
@@ -91,4 +94,9 @@ A página é **estática**, então o deploy é imediato em qualquer provedor:
 - **Formulário**: é **front-end apenas** (sem back-end). A marcação já está pronta e
   acessível; para capturar os leads, basta conectar a um serviço de formulários
   (ex.: Netlify Forms, Formspree) ou a um endpoint próprio.
+- **Modal de confirmação**: ao clicar em *"Quero aplicar agora"* abre um modal de
+  sucesso, feito 100% em CSS. A mensagem é genérica ("Parabéns! Você acaba de se
+  inscrever…") porque exibir **o nome digitado** dentro do modal exigiria JavaScript —
+  o que fugiria da regra "apenas HTML e CSS puro". Caso o uso de JS seja permitido,
+  a personalização com o nome é um incremento simples.
 - Nenhum impedimento técnico externo afetou a entrega.

@@ -7,7 +7,6 @@
   <meta name="description" content="Participe de uma sessão estratégica gratuita e descubra como estruturar crescimento, processos e escala com clareza, controle e previsibilidade." />
   <meta name="theme-color" content="#050711" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Construa uma operação digital previsível" />
   <meta property="og:description" content="Sessão estratégica gratuita para estruturar crescimento, processos e escala com clareza." />
@@ -15,7 +14,6 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-  <!-- Fonts (carregadas pelo navegador do visitante) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -25,26 +23,61 @@
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- ============ HEADER ============ -->
   <header class="site-header" id="topo">
     <div class="container header__inner">
       <a class="brand" href="#topo" aria-label="Escala Previsível — início">
         <img src="assets/logo.svg" alt="" width="40" height="40" class="brand__mark" />
         <span class="brand__name">Escala<span class="brand__accent">Previsível</span></span>
       </a>
+
       <nav class="header__nav" aria-label="Seções">
         <a href="#para-voce">Para você</a>
         <a href="#entrega">A sessão</a>
         <a href="#especialista">Especialista</a>
         <a href="#como-funciona">Como funciona</a>
       </nav>
-      <a href="#aplicar" class="btn btn--primary btn--sm header__cta">Garantir minha vaga</a>
+
+      <div class="header__group">
+        <label class="theme-switch" for="theme-toggle" title="Alternar tema claro/escuro">
+          <input type="checkbox" id="theme-toggle" class="ui-toggle" aria-label="Alternar entre tema claro e escuro" />
+          <span class="theme-switch__track">
+            <svg class="theme-switch__ico theme-switch__ico--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="currentColor"/></svg>
+            <svg class="theme-switch__ico theme-switch__ico--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span class="theme-switch__thumb"></span>
+          </span>
+        </label>
+
+        <a href="#aplicar" class="btn btn--primary btn--sm header__cta">Garantir minha vaga</a>
+
+        <a href="#menu" class="hamburger" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </a>
+      </div>
     </div>
   </header>
 
+  <div class="drawer-wrap" id="menu">
+    <a class="drawer-overlay" href="#topo" aria-label="Fechar menu" tabindex="-1"></a>
+    <aside class="drawer" aria-label="Menu de navegação">
+      <div class="drawer__head">
+        <span class="brand__name">Escala<span class="brand__accent">Previsível</span></span>
+        <a class="drawer__close" href="#topo" aria-label="Fechar menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <nav class="drawer__nav" aria-label="Seções">
+        <a href="#para-voce">Para você</a>
+        <a href="#entrega">A sessão</a>
+        <a href="#especialista">Especialista</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#aplicar">Aplicar agora</a>
+      </nav>
+      <a href="#aplicar" class="btn btn--primary btn--block drawer__cta">Garantir minha vaga</a>
+    </aside>
+  </div>
+
   <main id="conteudo">
 
-    <!-- ============ HERO ============ -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__inner">
@@ -77,7 +110,6 @@
           </ul>
         </div>
 
-        <!-- Hero visual: command center -->
         <div class="hero__visual" aria-hidden="true">
           <div class="orbit">
             <span class="orbit__ring orbit__ring--1"></span>
@@ -121,7 +153,6 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 1 — DOR / IDENTIFICAÇÃO ============ -->
     <section class="section section--pain" id="para-voce" aria-labelledby="pain-title">
       <div class="container">
         <header class="section__head">
@@ -175,7 +206,6 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 2 — O QUE A SESSÃO ENTREGA ============ -->
     <section class="section section--deliver" id="entrega" aria-labelledby="deliver-title">
       <div class="container">
         <header class="section__head">
@@ -214,55 +244,60 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 3 — ESPECIALISTA ============ -->
     <section class="section section--expert" id="especialista" aria-labelledby="expert-title">
       <div class="container expert__inner">
-        <div class="expert__media" aria-hidden="true">
+        <div class="expert__media">
           <div class="portrait">
-            <span class="portrait__ring"></span>
-            <!-- Ilustração de retrato (SVG) -->
-            <svg class="portrait__art" viewBox="0 0 300 340" role="img" aria-label="Ilustração do especialista">
+            <span class="portrait__ring" aria-hidden="true"></span>
+
+            <svg class="portrait__art" viewBox="0 0 300 360" role="img" aria-label="Retrato de Maycon de Oliveira">
               <defs>
                 <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#0f1c33"/>
+                  <stop offset="0" stop-color="#132742"/>
                   <stop offset="1" stop-color="#0a1322"/>
                 </linearGradient>
                 <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#16233c"/>
+                  <stop offset="0" stop-color="#1b2b48"/>
                   <stop offset="1" stop-color="#0d1526"/>
+                </linearGradient>
+                <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#d59873"/>
+                  <stop offset="1" stop-color="#b47e59"/>
                 </linearGradient>
                 <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0" stop-color="#2F7DFF"/>
                   <stop offset="1" stop-color="#33D6FF"/>
                 </linearGradient>
-                <radialGradient id="halo" cx="50%" cy="38%" r="55%">
+                <radialGradient id="halo" cx="50%" cy="34%" r="58%">
                   <stop offset="0" stop-color="#2F7DFF" stop-opacity="0.55"/>
                   <stop offset="1" stop-color="#2F7DFF" stop-opacity="0"/>
                 </radialGradient>
-                <clipPath id="frame"><rect x="0" y="0" width="300" height="340" rx="26"/></clipPath>
+                <clipPath id="frame"><rect x="0" y="0" width="300" height="360" rx="26"/></clipPath>
               </defs>
               <g clip-path="url(#frame)">
-                <rect width="300" height="340" fill="url(#bg-grad)"/>
-                <circle cx="150" cy="120" r="140" fill="url(#halo)"/>
-                <!-- shoulders / suit -->
-                <path d="M55 340 C55 262 95 232 150 232 C205 232 245 262 245 340 Z" fill="url(#suit)"/>
-                <path d="M150 232 L128 300 L150 318 L172 300 Z" fill="#0b1324"/>
-                <path d="M150 232 L128 300" stroke="url(#rim)" stroke-width="2" opacity="0.7"/>
-                <path d="M150 232 L172 300" stroke="url(#rim)" stroke-width="2" opacity="0.7"/>
-                <!-- collar -->
-                <path d="M118 243 L150 266 L126 288 Z" fill="#dfe8f5"/>
-                <path d="M182 243 L150 266 L174 288 Z" fill="#cdd9ec"/>
-                <!-- neck -->
-                <path d="M133 214 h34 v26 l-17 12 l-17 -12 Z" fill="#b9825f"/>
-                <!-- head -->
-                <path d="M150 96 C182 96 198 120 198 152 C198 190 178 214 150 214 C122 214 102 190 102 152 C102 120 118 96 150 96 Z" fill="#c68e67"/>
-                <!-- hair -->
-                <path d="M104 150 C100 112 120 86 150 86 C180 86 200 112 196 150 C190 132 184 124 172 120 C164 136 120 140 112 126 C108 134 106 142 104 150 Z" fill="#1c1912"/>
-                <path d="M104 150 C100 118 118 92 150 90 C140 104 128 118 118 150 Z" fill="#241f16"/>
-                <!-- rim light -->
-                <path d="M150 96 C182 96 198 120 198 152 C198 178 188 198 172 208" fill="none" stroke="url(#rim)" stroke-width="3" opacity="0.65" stroke-linecap="round"/>
+                <rect width="300" height="360" fill="url(#bg-grad)"/>
+                <circle cx="150" cy="120" r="150" fill="url(#halo)"/>
+                <path d="M48 360 C48 272 92 240 150 240 C208 240 252 272 252 360 Z" fill="url(#suit)"/>
+                <path d="M150 243 L120 300 L150 326 Z" fill="#0d1728"/>
+                <path d="M150 243 L180 300 L150 326 Z" fill="#111d33"/>
+                <path d="M150 243 L120 300" stroke="url(#rim)" stroke-width="2" opacity="0.55"/>
+                <path d="M150 243 L180 300" stroke="url(#rim)" stroke-width="2" opacity="0.55"/>
+                <path d="M126 250 L150 272 L174 250 L168 300 L132 300 Z" fill="#e7eefa"/>
+                <path d="M150 272 L143 286 L150 330 L157 286 Z" fill="#2f7dff"/>
+                <path d="M143 286 L150 272 L157 286 L150 294 Z" fill="#1f5fd6"/>
+                <path d="M134 214 h32 v30 l-16 12 l-16 -12 Z" fill="#a9724f"/>
+                <path d="M150 92 C184 92 200 118 200 152 C200 192 179 218 150 218 C121 218 100 192 100 152 C100 118 116 92 150 92 Z" fill="url(#skin)"/>
+                <circle cx="101" cy="156" r="8" fill="#b47e59"/><circle cx="199" cy="156" r="8" fill="#b47e59"/>
+                <path d="M102 150 C98 110 120 82 150 82 C180 82 202 110 198 150 C192 130 186 121 173 117 C165 134 118 138 110 123 C106 132 104 141 102 150 Z" fill="#20180f"/>
+                <path d="M104 148 C101 116 120 88 150 86 C139 101 127 117 117 150 Z" fill="#2b2013"/>
+                <path d="M126 150 q8 -5 16 0" stroke="#2a1d12" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <path d="M158 150 q8 -5 16 0" stroke="#2a1d12" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <circle cx="134" cy="160" r="3" fill="#2a1d12"/><circle cx="166" cy="160" r="3" fill="#2a1d12"/>
+                <path d="M150 164 l-4 14 h8 Z" fill="#a9724f" opacity="0.5"/>
+                <path d="M138 188 q12 10 24 0" stroke="#7d4f34" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <path d="M150 92 C184 92 200 118 200 152 C200 184 188 206 168 214" fill="none" stroke="url(#rim)" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
               </g>
-              <rect x="1.5" y="1.5" width="297" height="337" rx="25" fill="none" stroke="rgba(140,170,220,0.22)" stroke-width="2"/>
+              <rect x="1.5" y="1.5" width="297" height="357" rx="25" fill="none" stroke="rgba(140,170,220,0.22)" stroke-width="2"/>
             </svg>
 
             <span class="portrait__badge">
@@ -274,10 +309,10 @@
 
         <div class="expert__body">
           <p class="section__eyebrow">Conheça o especialista</p>
-          <h2 id="expert-title" class="section__title">Lucas Andrade</h2>
+          <h2 id="expert-title" class="section__title">Maycon de Oliveira</h2>
           <p class="expert__role">Estrategista de negócios digitais e mentor de operações online.</p>
           <p class="expert__bio">
-            Com mais de 10 anos de experiência em negócios digitais, Lucas ajudou empresas a
+            Com mais de 10 anos de experiência em negócios digitais, Maycon ajudou empresas a
             estruturar processos, equipes e modelos de crescimento sustentável. Seu foco é
             transformar operações desorganizadas em negócios <strong>previsíveis, lucrativos
             e escaláveis</strong>.
@@ -292,7 +327,6 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 4 — COMO FUNCIONA ============ -->
     <section class="section section--steps" id="como-funciona" aria-labelledby="steps-title">
       <div class="container">
         <header class="section__head">
@@ -325,7 +359,6 @@
       </div>
     </section>
 
-    <!-- ============ CTA FINAL / FORMULÁRIO ============ -->
     <section class="section section--cta" id="aplicar" aria-labelledby="cta-title">
       <div class="cta__glow" aria-hidden="true"></div>
       <div class="container">
@@ -373,10 +406,10 @@
               </select>
             </div>
 
-            <button type="submit" class="btn btn--primary btn--lg btn--block">
+            <a href="#sucesso" class="btn btn--primary btn--lg btn--block">
               Quero aplicar agora
               <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
+            </a>
 
             <p class="apply-form__disclaimer">
               Sessão gratuita • Sem compromisso • Sujeita à análise de perfil
@@ -385,15 +418,36 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="sucesso" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <a class="modal__overlay" href="#aplicar" aria-label="Fechar" tabindex="-1"></a>
+      <div class="modal__card">
+        <a class="modal__close" href="#aplicar" aria-label="Fechar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </a>
+        <span class="modal__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </span>
+        <h3 id="modal-title">Parabéns! 🎉</h3>
+        <p>Você acaba de se inscrever para a <strong>sessão estratégica gratuita</strong>. Em breve nossa equipe vai analisar seu perfil e entrar em contato.</p>
+        <a class="btn btn--primary" href="#aplicar">Entendi</a>
+      </div>
+    </div>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer__inner">
       <a class="brand" href="#topo" aria-label="Escala Previsível — topo">
         <img src="assets/logo.svg" alt="" width="36" height="36" class="brand__mark" />
         <span class="brand__name">Escala<span class="brand__accent">Previsível</span></span>
       </a>
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <a href="#para-voce">Para você</a>
+        <a href="#entrega">A sessão</a>
+        <a href="#especialista">Especialista</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#aplicar">Aplicar</a>
+      </nav>
       <p class="footer__tagline">Estrutura, processos e previsibilidade para escalar com controle.</p>
       <p class="footer__copy">© 2025 Escala Previsível · Página desenvolvida para teste prático.</p>
     </div>
