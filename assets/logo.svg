@@ -1,0 +1,19 @@
+<svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Escala Previsível">
+  <defs>
+    <linearGradient id="lg-gold" x1="4" y1="44" x2="44" y2="4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0921F"/>
+      <stop offset="1" stop-color="#F8CE6B"/>
+    </linearGradient>
+    <linearGradient id="lg-blue" x1="6" y1="40" x2="42" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F7DFF"/>
+      <stop offset="1" stop-color="#33D6FF"/>
+    </linearGradient>
+  </defs>
+  <!-- ascending bars = growth -->
+  <rect x="7"  y="29" width="7" height="12" rx="3" fill="url(#lg-blue)" opacity="0.85"/>
+  <rect x="18" y="22" width="7" height="19" rx="3" fill="url(#lg-blue)"/>
+  <rect x="29" y="14" width="7" height="27" rx="3" fill="url(#lg-gold)"/>
+  <!-- trend arrow -->
+  <path d="M9 27 L21 20 L30 24 L41 9" stroke="url(#lg-gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M34 8 L42 7 L41 15" stroke="url(#lg-gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
